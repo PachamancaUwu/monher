@@ -9,4 +9,6 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+    public DbSet<monher.Models.Pedido> DataPedido { get; set;}
+    public DbSet<monher.Models.Recomendacion> DataRecomendacion { get; set;}
 }
