@@ -3,46 +3,141 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - monher</title>
+    <title>@ViewData["Title"] - Monher S.A.</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/monher.styles.css" asp-append-version="true" />
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+     <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/css/site.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="~/css/responsive.css" rel="stylesheet" />
 </head>
+
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">monher</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+    <!-- Navbar Start -->
+    <div class="hero_area">
+    <header class="header_section">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <a class="navbar-brand" asp-area="" asp-controller="Inicio" asp-action="Inicio">
+            <span>
+            Monher S.A.
+            </span>
+        </a>
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Inicio" asp-action="Inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Nosotros" asp-action="Nosotros">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Catalogo" asp-action="Catalogo">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" asp-area="" asp-controller="Recomendacion" asp-action="Recomendacion">Recomendacion</a>
+                </li>
+            </ul>
             </div>
+        </div>
         </nav>
+    </div>
     </header>
+    </div>
+    <!-- Navbar End -->
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - monher - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <!-- info section -->
+    <section class="info_section layout_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="info-logo">
+              <h2>
+                Monher S.A.
+              </h2>
+              <p>
+                Somos una empresa orientada al suministro de productos y ofrecimiento de alternativas innovadoras desde 1992.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-nav">
+              <h4>
+                Navegar
+              </h4>
+              <ul>
+                <li>
+                  <a asp-area="" asp-controller="Inicio" asp-action="Inicio">Inicio</a>
+                </li>
+                <li>
+                  <a asp-area="" asp-controller="Nosotros" asp-action="Nosotros">Sobre Nosotros</a>
+                </li>
+                <li>
+                  <a asp-area="" asp-controller="Catalogo" asp-action="Catalogo">Catálogo</a>
+                </li>
+                <li>
+                  <a asp-area="" asp-controller="Recomendacion" asp-action="Recomendacion">Recomendacion</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-contact">
+              <h4>
+                Información de contacto
+              </h4>
+              <div class="location">
+                <h6>
+                  Correo electrónico corporativo:
+                </h6>
+                <span>virginia.gallo@monher.com</span>
+                <span>monher.operaciones@hotmail.com</span>
+              </div>
+              <div class="call">
+                <h6>
+                  Número de teléfono:
+                </h6>
+                <span>( +51 996006950 )</span>
+              </div>
+              <div class="call">
+                <h6>
+                  Dirección:
+                </h6>
+                <span>Av. El Polo 620 - 14 Monterrico - Surco</span>
+              </div>
+            </div>
+          </div>
+          
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
+    <!-- end info_section -->
+
+    <!-- JavaScript Libraries -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
