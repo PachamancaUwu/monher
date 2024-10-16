@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Desktop\\Programacion I\\monher\\monher.csproj": {}
+    "C:\\Users\\USUARIO\\Downloads\\monher-1\\monher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Desktop\\Programacion I\\monher\\monher.csproj": {
+    "C:\\Users\\USUARIO\\Downloads\\monher-1\\monher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\Programacion I\\monher\\monher.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Downloads\\monher-1\\monher.csproj",
         "projectName": "monher",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\Programacion I\\monher\\monher.csproj",
+        "projectPath": "C:\\Users\\USUARIO\\Downloads\\monher-1\\monher.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\Programacion I\\monher\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Downloads\\monher-1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
